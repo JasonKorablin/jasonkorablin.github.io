@@ -10,7 +10,7 @@ angular.module('app').factory('WeatherFactory', ['$http', '$q', function($http, 
 	wind,
 	promise;
 
-	var weather_api = 'http://api.openweathermap.org/data/2.5/weather';
+	var weather_api = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather';
 	var weather_params = 'units=imperial&APPID=e66763c4c68c4ea508137dec95260b39';
 	var zip = '17601';
 
