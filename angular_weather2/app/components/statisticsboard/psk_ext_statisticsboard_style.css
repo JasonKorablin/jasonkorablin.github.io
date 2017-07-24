@@ -1,0 +1,135 @@
+.container {
+	width: 90%;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+#psk_ext-animatedstatistics {
+	
+	padding: 2% 0 2% 0;
+}
+
+/* SETTING UP THE FLEX BOX TO MOVE THE SECTIONS AROUND. */
+.psk_ext-animatedstatistics-wrapper {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+/* PROPERTIES OF EACH INDUVIDUAL SECTION. EACH SECTION IS ALSO A FLEX BOX TO ALLOW THE CONTENT INSIDE TO BE RESPONSIVE. */
+.psk_ext-animatedstatistics-section {
+	
+	width: 100%;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #E1E4ED;
+	text-align: center;
+	flex: 1;
+	padding: 35px 0 35px 0;
+	
+	display: flex;
+	/* flex-direction: row;
+	justify-content: space-between; */
+	
+	
+	transition: all 300ms ease-in-out;
+	
+}
+
+.psk_ext-animatedstatistics-section:last-child {
+	
+	border: none;
+	
+}
+
+/* FUNCIONALITY FOR THE COLOR CHANGE WHEN HOVERING OVER A SECTION. */
+.psk_ext-animatedstatistics-section:hover {
+	
+	background-color: #F0F5FA;
+	flex: 2;
+	
+}
+
+.psk_ext-animatedstatistics-statbox {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	flex: 1;
+	
+	transition: all 300ms ease-in-out;
+	
+}
+
+/* STYLING FOR THE HEADER TEXT */
+.psk_ext-animatedstatistics-statisticheader {
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: #2B2D33;
+	font-size: 80%;
+	
+}
+
+/* STYLING FOR THE STATISTIC VALUES */
+.psk_ext-animatedstatistics-statvalue {
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 500%;
+	font-weight: 100;
+	color: #2C2E30;
+	margin: 15px 0px 0px 0px;
+	
+}
+
+/* STYLING FOR THE DATE THAT SITS BENEATH EACH STATISTIC */
+.psk_ext-animatedstatistics-date {
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 75%;
+	color: #757C82;
+	
+}
+
+/* CLASS EXTENSION FOR THE .SECTION CLASS THAT PROVIDES THE PROPERTIRES FOR THE 2X2 TABLE OF INFORMATION */
+.psk_ext-animatedstatistics-compcodes {
+	
+	display: flex;
+	flex-direction: column;
+	
+}
+
+/* PROPERTIES FOR THE ROWS INSIDE OF THE .compCodes CLASS */
+.psk_ext-animatedstatistics-compcodes .psk_ext-animatedstatistics-row {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	padding: 0px 6px 0px 6px;
+	
+}
+
+/* STYLING FOR THE HEADER TEXT IN THE .compCodes SECTION */
+.psk_ext-animatedstatistics-compcodes .psk_ext-animatedstatistics-row h4 {
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #121212;
+	
+}
+
+/* STYLING FOR THE PARAGRAPH TEXT IN THE .compCodes SECTION */
+.psk_ext-animatedstatistics-compcodes .psk_ext-animatedstatistics-row p {
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #121212;
+	margin-top: 2px;
+	text-align: left;
+	
+}
